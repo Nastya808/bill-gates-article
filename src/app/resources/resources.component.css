@@ -1,0 +1,21 @@
+.resources-section {
+    margin-top: 20px;
+  }
+  
+  .resources-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .resources-section li {
+    margin-bottom: 10px;
+  }
+  
+  .resources-section a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .resources-section a:hover {
+    text-decoration: underline;
+  }
