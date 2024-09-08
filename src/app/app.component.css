@@ -197,4 +197,36 @@ body {
     background-color: #005f99;
   }
   
+  /* Стили для контейнера кнопок */
+.button-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Стили для кнопок */
+.switch-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #0078d4;
+  background-color: #fff;
+  color: #0078d4;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Стиль для активной кнопки */
+.switch-button.active {
+  background-color: #0078d4;
+  color: #fff;
+}
+
+/* Эффект при наведении */
+.switch-button:hover {
+  background-color: #005fa3;
+  color: #fff;
+}
+
   
