@@ -1,0 +1,25 @@
+.biography {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .portrait {
+    width: 180px;
+    height: auto;
+    border-radius: 12px;
+    margin-right: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .portrait:hover {
+    transform: scale(1.05);
+  }
+  
+  .bio-text {
+    font-size: 1.2em;
+    line-height: 1.8;
+  }
+  

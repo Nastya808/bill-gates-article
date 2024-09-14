@@ -2,57 +2,48 @@
   "hash": "d498745d",
   "configHash": "38d59b07",
   "lockfileHash": "7402edaf",
-  "browserHash": "004d61fa",
+  "browserHash": "31b87aa4",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "f4cb871f",
+      "fileHash": "3ef07b7a",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "d372be97",
+      "fileHash": "a505856e",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "b6877c8d",
+      "fileHash": "295055e0",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "da263778",
-      "needsInterop": false
-    },
-    "tslib": {
-      "src": "../../../../../node_modules/tslib/tslib.es6.mjs",
-      "file": "tslib.js",
-      "fileHash": "0319daab",
+      "fileHash": "b45126b1",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "de8d38eb",
+      "fileHash": "ed91acf6",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-LAQJBJAB": {
-      "file": "chunk-LAQJBJAB.js"
+    "chunk-TZNDJE4W": {
+      "file": "chunk-TZNDJE4W.js"
     },
-    "chunk-JAOTO5KI": {
-      "file": "chunk-JAOTO5KI.js"
+    "chunk-GTUCESPA": {
+      "file": "chunk-GTUCESPA.js"
     },
-    "chunk-NRYP5UEI": {
-      "file": "chunk-NRYP5UEI.js"
-    },
-    "chunk-XKUCMAFN": {
-      "file": "chunk-XKUCMAFN.js"
+    "chunk-3W2WHAOB": {
+      "file": "chunk-3W2WHAOB.js"
     }
   }
 }

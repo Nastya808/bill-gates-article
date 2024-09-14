@@ -1,48 +1,22 @@
 <div class="article-container">
-  <header class="header">
+  <header>
     <h1>Bill Gates</h1>
   </header>
 
-  <div class="button-container">
-    <button class="switch-button" (click)="showView('biography')" [class.active]="currentView === 'biography'">Biography</button>
-    <button class="switch-button" (click)="showView('quotes')" [class.active]="currentView === 'quotes'">Quotes</button>
-    <button class="switch-button" (click)="showView('resources')" [class.active]="currentView === 'resources'">Resources</button>
+  <app-biography></app-biography>
+
+  <app-quotes></app-quotes>
+  <div class="add-quote">
+    <label for="newQuote">Add a new quote:</label>
+    <input id="newQuote" [(ngModel)]="newQuote" placeholder="Add a new quote" />
+    <button (click)="addQuote()">Add Quote</button>
   </div>
 
-  <div [ngSwitch]="currentView">
-
-    <section *ngSwitchCase="'biography'" class="biography">
-      <img src="images/bill-gates.jpg" alt="Bill Gates" class="portrait">
-      <div class="bio-text">
-        <p><strong>Bill Gates</strong> is a co-founder of Microsoft, philanthropist, and one of the most influential figures in technology. Born on October 28, 1955, in Seattle, Washington, he showed an early interest in computing and went on to build one of the most successful software companies in the world. Gates is also known for his philanthropic work through the Bill & Melinda Gates Foundation.</p>
-      </div>
-    </section>
-
-    <section *ngSwitchCase="'quotes'" class="quotes">
-      <h2>Quotes by Bill Gates</h2>
-      <ul>
-        <li *ngFor="let quote of quotes">{{ quote }}</li>
-      </ul>
-      <div class="add-quote">
-        <input [(ngModel)]="newQuote" placeholder="Add a new quote" />
-        <button (click)="addQuote()">Add Quote</button>
-      </div>
-    </section>
-
-    <section *ngSwitchCase="'resources'" class="resources">
-      <h2>Resources</h2>
-      <ul>
-        <li *ngFor="let resource of resources">
-          <a [href]="resource.url" target="_blank">{{ resource.name }}</a>
-        </li>
-      </ul>
-      <div class="add-resource">
-        <input [(ngModel)]="newResourceName" placeholder="Resource Name" />
-        <input [(ngModel)]="newResourceUrl" placeholder="Resource URL" />
-        <button (click)="addResource()">Add Resource</button>
-      </div>
-    </section>
-
-    <div *ngSwitchDefault>Выберите раздел для отображения</div>
+  <app-resources></app-resources>
+  <div class="add-resource">
+    <label>Add a new resource:</label>
+    <input [(ngModel)]="newResourceName" placeholder="Resource Name" />
+    <input [(ngModel)]="newResourceUrl" placeholder="Resource URL" />
+    <button (click)="addResource()">Add Resource</button>
   </div>
 </div>

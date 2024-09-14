@@ -1,0 +1,71 @@
+.quotes {
+    margin-top: 30px;
+}
+
+.quotes h2 {
+    font-size: 2.5em;
+    color: #007acc;
+    margin-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(90deg, #007acc, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.quotes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quotes ul li {
+    position: relative;
+    margin: 20px 0;
+    padding: 20px 40px;
+    font-size: 1.5em;
+    color: #007acc;
+    font-style: italic;
+    background-color: #f0f8ff;
+    border-left: 5px solid #007acc;
+    border-radius: 8px;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.quotes ul li:hover {
+    transform: scale(1.05);
+    background-color: #e0f0ff;
+}
+
+.quotes ul li:before {
+    content: "\201C";
+    font-size: 3em;
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    color: #00c6ff;
+    opacity: 0.8;
+}
+
+.quotes ul li:after {
+    content: "\201D";
+    font-size: 3em;
+    position: absolute;
+    bottom: -10px;
+    right: 15px;
+    color: #00c6ff;
+    opacity: 0.8;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

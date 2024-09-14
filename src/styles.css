@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #e5e7eb;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right, #f0f4f8, #cfd8dc);
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+ 
